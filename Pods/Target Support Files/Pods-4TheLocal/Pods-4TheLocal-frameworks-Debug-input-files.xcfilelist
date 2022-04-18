@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-4TheLocal/Pods-4TheLocal-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CreditCardValidator/CreditCardValidator.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework

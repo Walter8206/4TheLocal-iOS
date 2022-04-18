@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccTopNav" customModule="_TheLocal" customModuleProvider="target">
+            <connections>
+                <outlet property="menuBtn" destination="vKq-CV-T46" id="uXg-8e-Ray"/>
+                <outlet property="rightBtn" destination="nHE-t6-SLN" id="WtV-k1-ext"/>
+                <outlet property="view" destination="iN0-l3-epB" id="s6q-ZB-zWB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKq-CV-T46">
+                    <rect key="frame" x="20" y="41" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="3ux-ca-Ooz"/>
+                        <constraint firstAttribute="width" constant="38" id="BUE-Tl-TNN"/>
+                    </constraints>
+                    <state key="normal" image="menu_icon"/>
+                    <connections>
+                        <action selector="menuBtnTapped:" destination="-1" eventType="touchUpInside" id="iws-3k-IjC"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHE-t6-SLN">
+                    <rect key="frame" x="351" y="40" width="43" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LxI-vX-Y3n"/>
+                    </constraints>
+                    <state key="normal" title="Active">
+                        <color key="titleColor" red="0.28849786519999998" green="0.72175568339999996" blue="0.16444206240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnTapped:" destination="-1" eventType="touchUpInside" id="EBg-Et-a2f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vKq-CV-T46" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="10o-Ja-DW2"/>
+                <constraint firstItem="vKq-CV-T46" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ep2-KV-b34"/>
+                <constraint firstItem="nHE-t6-SLN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="a4Z-sS-zHW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nHE-t6-SLN" secondAttribute="trailing" constant="20" id="aDX-2H-MnC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="139.95535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_icon" width="38" height="38"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

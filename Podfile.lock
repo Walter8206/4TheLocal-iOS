@@ -1,0 +1,28 @@
+PODS:
+  - CreditCardValidator (0.5.2)
+  - IQKeyboardManagerSwift (6.5.6)
+  - SideMenuSwift (2.0.7)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - CreditCardValidator (~> 0.5.2)
+  - IQKeyboardManagerSwift
+  - SideMenuSwift
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - CreditCardValidator
+    - IQKeyboardManagerSwift
+    - SideMenuSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  CreditCardValidator: 30a5dee5029d2af4b57105b65b5ac7d5b927b252
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  SideMenuSwift: ffbbc88d23741932177ad1320df837cedfb3bc5e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: ff93d6dfd4d773876d4479434d66192f98559a1a
+
+COCOAPODS: 1.11.2

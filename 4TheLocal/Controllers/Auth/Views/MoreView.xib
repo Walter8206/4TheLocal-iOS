@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Compact-Regular.ttf">
+            <string>SFCompactRounded-Ultralight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreView" customModule="_TheLocal" customModuleProvider="target">
+            <connections>
+                <outlet property="container" destination="zFZ-cv-dxo" id="Kfy-E3-w2E"/>
+                <outlet property="learnMoreBtn" destination="9Eu-nP-tL9" id="am9-GQ-djF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zFZ-cv-dxo">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tr-Ll-gni" customClass="CardView" customModule="_TheLocal" customModuleProvider="target">
+                    <rect key="frame" x="20" y="54" width="374" height="213"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhw-FH-eE9">
+                            <rect key="frame" x="8" y="30" width="358" height="59.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="30%">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="system" size="26"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> of Annual sales will be donated to
+local charities, right here in Northern Michigan</string>
+                                    <attributes>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eu-nP-tL9">
+                            <rect key="frame" x="30" y="117" width="314" height="56"/>
+                            <color key="backgroundColor" red="0.95686274510000002" green="0.82140475509999999" blue="0.12042892719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="gNs-gB-d9i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFCompactRounded-Ultralight" family="SF Compact Rounded" pointSize="18"/>
+                            <state key="normal" title="Learn More">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <connections>
+                                <action selector="morebtnTapped:" destination="-1" eventType="touchUpInside" id="ol5-fZ-oYR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9Eu-nP-tL9" secondAttribute="bottom" constant="40" id="403-6j-N3u"/>
+                        <constraint firstItem="Zhw-FH-eE9" firstAttribute="leading" secondItem="9tr-Ll-gni" secondAttribute="leading" constant="8" id="9HN-J2-vy7"/>
+                        <constraint firstItem="9Eu-nP-tL9" firstAttribute="leading" secondItem="9tr-Ll-gni" secondAttribute="leading" constant="30" id="Fv2-bl-pSe"/>
+                        <constraint firstAttribute="trailing" secondItem="Zhw-FH-eE9" secondAttribute="trailing" constant="8" id="Mz9-KD-krg"/>
+                        <constraint firstItem="Zhw-FH-eE9" firstAttribute="centerX" secondItem="9tr-Ll-gni" secondAttribute="centerX" id="PDt-Fj-Mrt"/>
+                        <constraint firstAttribute="trailing" secondItem="9Eu-nP-tL9" secondAttribute="trailing" constant="30" id="SdN-6k-MGL"/>
+                        <constraint firstItem="9Eu-nP-tL9" firstAttribute="top" secondItem="Zhw-FH-eE9" secondAttribute="bottom" constant="27.5" id="gOr-6R-zqC"/>
+                        <constraint firstItem="Zhw-FH-eE9" firstAttribute="top" secondItem="9tr-Ll-gni" secondAttribute="top" constant="30" id="uZz-ul-21A"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Xqa-E5-FbP"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9tr-Ll-gni" firstAttribute="leading" secondItem="Xqa-E5-FbP" secondAttribute="leading" constant="20" id="lEe-DO-3Uk"/>
+                <constraint firstItem="Xqa-E5-FbP" firstAttribute="trailing" secondItem="9tr-Ll-gni" secondAttribute="trailing" constant="20" id="lJm-Q8-GeZ"/>
+                <constraint firstItem="Xqa-E5-FbP" firstAttribute="bottom" secondItem="9tr-Ll-gni" secondAttribute="bottom" constant="20" id="nCz-1c-JVQ"/>
+                <constraint firstItem="9tr-Ll-gni" firstAttribute="top" secondItem="Xqa-E5-FbP" secondAttribute="top" constant="10" id="pWf-7q-slK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="5.7971014492753632" y="-83.370535714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
